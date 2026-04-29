@@ -10,4 +10,11 @@ A lightweight macOS menu bar app for tracking time across multiple named timers.
 - Crash recovery — running timers are preserved across unexpected app restarts
 - Persists state automatically between launches
 
-<img width="640" height="400" alt="Screenshot1 2026-04-27 at 13 27 40" src="https://github.com/user-attachments/assets/d8a505f7-7d58-412b-ad87-9d28c673614d" />
+<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/f9a5f8b7-8765-4de5-a88a-d0f4f41a8b26" />
+<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/8092a94b-3a8b-4515-9378-4cec1846fb8d" />
+<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/1ef7f9bd-a7c4-4295-9e6a-48ac36207df9" />
+<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/95937296-079b-4152-94b5-9099d08d8473" />
+
+
+
+
