@@ -1,5 +1,30 @@
 # Changelog
 
+## 2.1
+
+### New
+- **Export from menu bar** — CSV and JSON export are now available directly from the right-click status-bar menu, alongside Stop All Timers.
+- **Edit menu / keyboard shortcuts** — Cut, Copy, Paste, Undo, Redo, and Select All (⌘X/C/V/Z/⇧Z/A) now work in all text fields.
+- **Build number in version banner** — the menu-bar hero banner shows the full version string including build number (e.g. `2.1 (7)`).
+- **Auto-named timers** — clicking the add button creates a timer with a generated name ("New Timer", "New Timer 2", …) instead of requiring a name up front.
+- **Corrupt-file recovery** — if the save file cannot be decoded, it is copied to a `.json.corrupt` backup and a clear alert is shown; the app starts with an empty list rather than hanging or silently discarding data.
+- **Sleep/wake crash recovery** — suspended timer IDs are now persisted so timers that were running before a sleep-wake cycle are correctly resumed even if the app was force-quit during sleep.
+
+### Changed
+- **Sidebar restyled** — uses `NavigationSplitView` with a resizable column (180–320 pt), an accent-tinted gradient background, and active/inactive window states.
+- **Sidebar row detail** — each group row now shows timer count, running-timer indicator, and the group's elapsed total.
+- **Duplicate name scoped to group** — timers in different groups may share the same name; uniqueness is only enforced within a group.
+- **`add()` / `addGroup()` return ID** — both methods now return the new item's UUID on success (or `nil` on failure) instead of a Bool.
+- **Status ticker is idle-aware** — the 1-second status-bar ticker only runs while at least one timer is active; the app is fully idle otherwise.
+- **`setElapsed` stops running timer first** — manually setting elapsed time now correctly records any in-progress time before overwriting, preventing silent time loss.
+- **Transparent title bar** — the main window uses a hidden title with a unified toolbar style for a cleaner look.
+- **Window center fallback** — if the status-bar button's window is not yet available at startup, the panel centers on the main screen instead of failing silently.
+
+### Fixed
+- **DurationPicker field focus** — Tab and Shift-Tab navigate between H/M/S fields without triggering the ghost-window flash that appeared on first focus.
+- **Ghost-window flash on first text field focus** — the shared field editor is pre-warmed at launch so the first `NSTextField` activation no longer causes a transient window to flicker.
+- **Sidebar selection resets on group deletion** — if the selected group is deleted, selection falls back to the next available group or "Ungrouped".
+
 ## 2.0
 
 ### New
