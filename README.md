@@ -1,6 +1,8 @@
 # Time Tracker XS
 A lightweight macOS menu bar app for tracking time across multiple named timers.
 
+[<img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="40">](https://apps.apple.com/app/id6761305276)
+
 ## Features
 - Run multiple named timers simultaneously
 - Group timers — assign timers to named groups, with a running total shown per group
