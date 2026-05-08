@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.2
+
+### New
+- **Ungrouped elapsed total in sidebar** — the "Ungrouped" sidebar row now shows a live running total alongside grouped rows, ticking in real time while any ungrouped timer is active.
+- **New app icon** — redesigned application logo across all sizes.
+- **Dedicated menu-bar icon** — the status item uses a purpose-built `MenuIcon` asset instead of the app icon, giving a cleaner look at menu-bar resolution.
+- **`ExportHelpers` module** — export logic (save panel, error alert) extracted into a standalone file shared by the menu-bar and window code paths.
+- **Unit test suite** — `TimerStoreTests` added covering store operations.
+
+### Changed
+- **Observer registration before data load** — `TimerStore.init` no longer calls `load()` directly; `AppDelegate` now calls `store.loadData()` after registering the `dataLoadFailed` observer, ensuring the corrupt-file alert is never silently dropped on first launch.
+- **`hidePanel` saves frame lazily** — panel frame is saved only when the panel is actually visible, avoiding a stale write when the panel has not been shown yet.
+- **Menu-bar hero banner layout** — icon size increased to 48 pt and left-aligned at a fixed offset instead of centered, for a more balanced layout with longer version strings.
+
+### Fixed
+- **Ungrouped sidebar total not ticking** — the ungrouped row's elapsed display now updates every second while a timer is running, matching the behavior of named group rows.
+
 ## 2.1
 
 ### New
