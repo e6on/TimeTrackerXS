@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3
+
+### Changed
+- **Running-timer color unified to orange** — all running-state indicators (row strip, play button, elapsed text, row background, sidebar count badge, and toolbar count) now use a single `runningOrange` semantic color (`#FF8C1A` dark / `#D15400` light) instead of a mix of `accentColor` and an inline-computed blue. The selected+running row background uses a more vibrant orange tint (`0.6` opacity) to clearly distinguish it from a merely selected row.
+- **Sidebar row metadata hidden when empty** — the timer count, elapsed total, and running-count badge no longer render for groups (or the Ungrouped row) that contain zero timers, reducing visual clutter for unused groups.
+- **Running count badge larger in sidebar** — the play icon and count text in group rows and the Ungrouped row increased from 8 pt to 12 pt, matching the toolbar badge size and improving legibility.
+
 ## 2.2
 
 ### New
