@@ -12,11 +12,7 @@ A lightweight macOS menu bar app for tracking time across multiple named timers.
 - Crash recovery — running timers are preserved across unexpected app restarts
 - Persists state automatically between launches
 
-<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/f9a5f8b7-8765-4de5-a88a-d0f4f41a8b26" />
-<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/8092a94b-3a8b-4515-9378-4cec1846fb8d" />
-<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/1ef7f9bd-a7c4-4295-9e6a-48ac36207df9" />
-<img width="720" height="450" alt="image" src="https://github.com/user-attachments/assets/95937296-079b-4152-94b5-9099d08d8473" />
-
-
-
-
+<img width="720" height="450" alt="Screenshot 2026-05-13 at 10 57 31" src="https://github.com/user-attachments/assets/a51dfbc8-89e9-44a3-bfe0-747f98b71ce4" />
+<img width="720" height="450" alt="Screenshot 2026-05-13 at 11 07 39" src="https://github.com/user-attachments/assets/09181807-9222-481b-b1e0-2c922c7f5b08" />
+<img width="720" height="450" alt="Screenshot 2026-05-13 at 11 00 20" src="https://github.com/user-attachments/assets/8a4d394a-6821-4024-9929-3619e44b8b31" />
+<img width="720" height="450" alt="Screenshot 2026-05-13 at 11 04 54" src="https://github.com/user-attachments/assets/c91aad49-f74b-4cf1-8a7b-726c283f19d4" />
