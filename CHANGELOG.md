@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.4
+
+### New
+- **"Rate Time Tracker XS" menu item** — a star-icon entry in the status-bar menu opens the App Store review page directly.
+- **Automatic review prompt** — after 15 minutes of active use across 3 qualifying sessions, the system review dialog is shown via `SKStoreReviewController`.
+
+### Changed
+- **Sidebar rendered with plain gradients** — `NSVisualEffectView` blur/vibrancy removed from both the sidebar list and its header; each now uses a standalone `LinearGradient` overlay, giving a consistent appearance across active and inactive window states.
+- **Sidebar header has a dedicated gradient** — the header area uses its own two-stop accent fade (`headerGradient`) separate from the sidebar list gradient, replacing the previous vibrancy + gradient composite.
+
 ## 2.3
 
 ### Changed
